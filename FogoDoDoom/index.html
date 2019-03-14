@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <style>
+            body{
+                background-color: #000;
+            }
+
+            table{
+                border-collapse: collapse;
+                border: 1px solid #000;
+            }
+            td{
+                width: 50px;
+                height: 50px;
+                border: 1px solid #000;
+                text-align: center;
+                vertical-align: center;
+                font-family: monospace;
+                font-size: 18px;
+                position: relative;
+            }
+
+            .pixel-index {
+                font-size: 10px;
+                display: inline-block;
+                position: absolute;
+                top:2px;
+                right:2px;
+                color: #999;
+            }
+
+            td.pixel{
+                width: 4px;
+                height: 4px;
+                
+            }
+            #less{
+                margin-top: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+        <div id="fireCanvas" onclick="alterWind();"></div>
+        <script src="fire.js">
+        </script>
+        <input id = "startFire" type = "button" value = "Start" onclick= "startFire();"/>
+        <input id = "less" type = "button" value = "+" onclick = "plusFire();"/>
+        <input id = "clickMe" type="button" value = "clickme" onclick = "alterWind();" />
+        <input id = "plus" type = "button" value = "-" onclick = "lessFire();"/>
+        <input id = "startFire" type = "button" value = "End" onclick= "endFire();"/>
+        </center>
+    </body>
+</html>
